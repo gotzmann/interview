@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  checkout:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./log:/app/log
+    env_file:
+      - .env
