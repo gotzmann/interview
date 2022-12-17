@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  server:
+    build:
+      context: .
+      dockerfile: roadrunner.Dockerfile
+    ports:
+      - 80:80
+
+  wrk:
+    build:
+      context: ../wrk
+      dockerfile: wrk.Dockerfile
+

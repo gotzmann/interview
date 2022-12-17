@@ -1,0 +1,14 @@
+{
+	"require": {
+	    "gotzmann/comet": "^2.0.0",
+		"illuminate/database": "^7.5",
+		"illuminate/events": "^7.5",
+		"monolog/monolog": "^2.0",
+		"vlucas/phpdotenv": "^4.1"
+	},
+    "autoload": {
+        "psr-4": {         
+            "App\\": "src/"
+        }
+    }
+}
